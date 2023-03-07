@@ -1,3 +1,4 @@
 FROM ubuntu:22.04
 RUN apt update && \
-  apt install -y curl iproute2 iputils-ping traceroute 
+  apt install -y curl iproute2 iputils-ping traceroute net-tools
+CMD ["/bin/sh", "-c", "while :; do sleep 10; done"]
